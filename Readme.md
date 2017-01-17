@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Роман Коробейников](https://up.htmlacademy.ru/htmlcss/16/user/204721).
-*Наставник: [Игорь Дерябин](https://htmlacademy.ru/profile/id212247)
+* Наставник: [Игорь Дерябин](https://htmlacademy.ru/profile/id212247)
 
 ---
 
