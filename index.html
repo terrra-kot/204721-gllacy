@@ -1,12 +1,355 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Глейси - Главная страница
+		</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+	<body>
 
-  </body>
+		<!--Шапка сайта-->
+		<header class="main-header container clearfix">
+
+			<a class="homepage" href="">
+				<img class="logo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+			</a>
+
+			<!--Главный блок навигации по сайту-->
+			<nav class="main-navigation">
+				<ul>
+					<li>
+						<a href="#">
+							Каталог
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Доставка и оплата
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							О Компании
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<!--конец-->
+
+			<!--Блок пользователя-->
+			<div class="user-block">
+
+				<!--Поиск-->
+					<input class="search" type="text" name="search">
+				<!--конец-->
+
+				<!--Авторизация-->
+				<a class="login" href="#">
+					<img src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+				</a>
+				<!--конец-->
+
+				<!--Корзина-->
+				<a class="basket" href="#">
+					<img src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+				</a>
+				<!--конец-->
+
+				<!--Режим работы-->
+				<span class="work-time">
+					С 10 до 20 ежедневно<br>
+					<b>8 812 450-25-25</b>
+				</span>
+				<!--конец-->
+
+			</div>
+			<!--конец-->
+
+		</header>
+		<!--Шапка сайта - конец-->
+
+
+		<!--Основной контент-->
+		<main class="container">
+
+			<!--Галлерея-->
+			<div class="gallery clearfix">
+				<figure class="gallery-content">
+					<img class="item-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+					<h1>
+						Крем-брюле и пломбир с малиновым джемом
+					</h1>
+					<a class="first current" href="#"></a>
+					<a class="second" href="#"></a>
+					<a class="third" href="#"></a>
+					<div class="buy-button">
+						<a href="#">
+							Давайте оба!
+						</a>
+					</div>
+				</figure>
+			</div>
+			<!--Галлерея - конец-->
+
+
+			<!--Баннеры-->
+			<div class="banners clearfix">
+
+				<!--Карточка-1-->
+				<article class="banner">
+					<img class="banner-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+					<h2>
+						Малинка даром!
+					</h2>
+					<p>
+						При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+					</p>
+					<div class="banner-button">
+						<a href="#">
+							Хочу варенье!
+						</a>
+					</div>
+				</article>
+				<!--конец-->
+
+				<!--Карточка-2-->
+				<article class="banner">
+					<img class="banner-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+					<h2>
+						Шоколадки даром!
+					</h2>
+					<p>
+						При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+					</p>
+					<div class="banner-button">
+						<a href="#">
+							Хочу шоколадки!
+						</a>
+					</div>
+				</article>
+				<!--конец-->
+
+			</div>
+			<!--Баннеры - конец-->
+
+
+			<!--Хиты продаж-->
+			<div class="hits clearfix">
+
+				<!--Хит-1-->
+				<a class="hit hit-1" href="#">
+					<img class="hit-label" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+					<img class="hit-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+					<span class="hit-price">
+						310&#8381;/кг
+					</span>
+					<p class="hit-description">
+						Сливочное с апельсиновым джемом и цитрусовой стружкой
+					</p>
+				</a>
+				<!--конец-->
+
+				<!--Хит-2-->
+				<a class="hit hit-2" href="#">
+					<img class="hit-label" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+					<img class="hit-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+					<span class="hit-price">
+						380&#8381;/кг
+					</span>
+					<p class="hit-description">
+						Сливочно-кофейное с кусочками шоколада
+					</p>
+				</a>
+				<!--конец-->
+
+				<!--Хит-3-->
+				<a class="hit hit-3" href="#">
+					<img class="hit-label" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+					<img class="hit-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+					<span class="hit-price">
+						355&#8381;/кг
+					</span>
+					<p class="hit-description">
+						Сливочно-клубничное с присыпкой из белого шоколада
+					</p>
+				</a>
+				<!--конец-->
+
+				<!--Хит-4-->
+				<a class="hit hit-4" href="#">
+					<img class="hit-label" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+					<img class="hit-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+					<span class="hit-price">
+						415&#8381;/кг
+					</span>
+					<p class="hit-description">
+						Сливочное крем-брюле с карамельной подливкой
+					</p>
+				</a>
+				<!--конец-->
+
+			</div>
+			<!--Хиты продаж - конец-->
+
+
+			<!--Описание магазина-->
+			<div class="features">
+				<b>
+					Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
+				</b>
+
+				<!--Особенность-1-->
+				<div class="feature-1">
+					<img class="feature-label" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+					<p>
+						Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+					</p>
+				</div>
+				<!--конец-->
+
+				<!--Особенность-2-->
+				<div class="feature-2">
+					<img class="feature-label" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+					<p>
+						Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+					</p>
+				</div>
+				<!--конец-->
+
+				<!--Особенность-3-->
+				<div class="feature-3">
+					<img class="feature-label" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+					<p>
+						Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+					</p>
+				</div>
+				<!--конец-->
+
+				<!--Особенность-4-->
+				<div class="feature-4">
+					<img class="feature-label" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+					<p>
+						Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+					</p>
+				</div>
+				<!--конец-->
+
+			</div>
+			<!--Описание магазина - конец-->
+
+
+			<!--Блок Новостей и подписки-->
+			<div class="news-subscribe clearfix">
+
+				<!--Новости-->
+				<div class="news">
+					<img class="news-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+					<span>
+						Новое в нашем блоге
+					</span>
+					<a class="news-show" href="#">
+						10  способов сервировки фруктовых щербетов к столу
+					</a>
+				</div>
+				<!--Новости - конец-->
+
+				<!--Подписка-->
+				<div class="subscribe">
+					<p>
+						Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+					</p>
+					<form class="subscribe-form" method="get" name="subscribe-form">
+						<input type="email" name="email" placeholder="Электронная почта">
+						<button class="submit" type="submit" name="submit">
+							Отправить
+						</button>
+					</form>
+				</div>
+				<!--Подписка - конец-->
+
+			</div>
+			<!--Блок Новостей и подписки - конец-->
+
+		<!--Основной контент - конец-->
+		</main>
+
+		<!--Карта-->
+		<div class="map">
+			<img src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+			<img src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+			<address class="contact-info">
+				<span>
+					Адрес главного офиса и офлайн магазина:
+				</span>
+				<span>
+					ул. Большая Конюшенная 19/8, Санкт-Петербург
+				</span>
+				<span>
+					Для заказов по телефону:<br>
+					<b>
+						8 812 450-25-25
+					</b><br>
+					(с 10 до 20 ежедневно)
+				</span>
+				<div class="contact-button">
+					<a href="#">
+						Форма обратной связи
+					</a>
+				</div>
+			</address>
+		</div>
+		<!--Карта - конец-->
+
+
+		<!--Подвал-->
+		<footer class="main-footer container clearfix">
+
+			<!--Адреса в социальных сетях-->
+			<div class="social-list">
+				<a class="social-btn social-photo1" href="http://twitter.com">
+					<img class="item-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+				</a>
+				<a class="social-btn social-photo1" href="http://instagram.com">
+					<img class="item-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+				</a>
+				<a class="social-btn social-photo1" href="http://facebook.com">
+					<img class="item-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+				</a>
+				<a class="social-btn social-photo1" href="http://vk.com">
+					<img class="item-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+				</a>
+			</div>
+			<!--конец-->
+
+			<!--Документы-->
+			<div class="documents">
+				<img class="favorite-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+				<a href="#"><b>Для поставщиков</b></a>
+				<a href="#">Наши документы</a>
+				<a href="#">О производстве</a>
+				<a href="#">Экологические стандарты</a>
+			</div>
+			<!--конец-->
+
+			<!--Разработчик сайта-->
+			<div class="autor">
+				<img class="autor-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+				<span>
+					Сделано в 
+					<a class="autor-link" href="http://htmlacademy.ru">
+						HTML Academy 
+					</a>
+					&copy; 2017
+				</span>
+			</div>
+			<!--конец-->
+
+		</footer>
+		<!--Подвал - конец-->
+
+	</body>
+
 </html>
