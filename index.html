@@ -24,6 +24,37 @@
 						<a href="#">
 							Каталог
 						</a>
+
+						<!--Всплывающее меню-->
+						<ul class="pop-up submenu">
+							<li>
+								<a href="#">
+									Новинки
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Сливочное
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Щербеты
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Фруктовый лед
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Мелорин
+								</a>
+							</li>
+						</ul>
+						<!--конец-->
+
 					</li>
 					<li>
 						<a href="#">
@@ -43,19 +74,48 @@
 			<div class="user-block">
 
 				<!--Поиск-->
-					<input class="search" type="text" name="search">
+				<div class="search">
+					<img src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+
+					<!--Всплывающее поле поиска-->
+					<div class="pop-up">
+						<form method="get">
+							<input type="text" name="search" placeholder="Что ищем?">
+						</form>
+					</div>
+					<!--конец-->
+
+				</div>
 				<!--конец-->
 
 				<!--Авторизация-->
-				<a class="login" href="#">
+				<div class="login">
 					<img src="http://placehold.it/150x100" alt="Фото пока отсутствует">
-				</a>
+					Вход
+
+					<!--Всплывающее поле авторизации-->
+					<div class="pop-up">
+						<form method="post">
+							<input type="email" name="email" placeholder="Электронная почта">
+							<input type="password" name="password" placeholder="Пароль">
+							<button class="login-button" type="submit" name="login-button">Войти</button>
+						</form>
+						<a href="#">Забыли пароль?</a>
+						<a href="#">Новая регистрация</a>
+					</div>
+					<!--конец-->
+
+				</div>
 				<!--конец-->
 
 				<!--Корзина-->
 				<a class="basket" href="#">
 					<img src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+					Пусто
 				</a>
+				<div class="pop-up">
+					<!--Не представляю, как размечать всплывающее окно корзины-->
+				</div>
 				<!--конец-->
 
 				<!--Режим работы-->
@@ -75,24 +135,52 @@
 		<!--Основной контент-->
 		<main class="container">
 
-			<!--Галлерея-->
-			<div class="gallery clearfix">
-				<figure class="gallery-content">
+			<!--Специальное предложение-->
+			<div class="special clearfix">
+
+				<!--Предложение-1-->
+				<figure class="special-item1">
 					<img class="item-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
-					<h1>
+					<h2>
 						Крем-брюле и пломбир с малиновым джемом
-					</h1>
-					<a class="first current" href="#"></a>
-					<a class="second" href="#"></a>
-					<a class="third" href="#"></a>
-					<div class="buy-button">
-						<a href="#">
-							Давайте оба!
-						</a>
-					</div>
+					</h2>
 				</figure>
+				<!--конец-->
+
+				<!--Предложение-1-->
+				<figure class="special-item2">
+					<img class="item-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+					<h2>
+						Шоколадный пломбир и лимонный сорбет
+					</h2>
+				</figure>
+				<!--конец-->
+
+				<!--Предложение-1-->
+				<figure class="special-item3">
+					<img class="item-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+					<h2>
+						Пломбир с помадкой и клубничный щербет
+					</h2>
+				</figure>
+				<!--конец-->
+
+				<!--Слайдер-->
+				<a class="first current" href="#"></a>
+				<a class="second" href="#"></a>
+				<a class="third" href="#"></a>
+				<!--конец-->
+
+				<!--Купить-->
+				<div class="buy-button">
+					<a href="#">
+						Давайте оба!
+					</a>
+				</div>
+				<!--конец-->
+
 			</div>
-			<!--Галлерея - конец-->
+			<!--Специальное предложение - конец-->
 
 
 			<!--Баннеры-->
@@ -140,55 +228,87 @@
 			<div class="hits clearfix">
 
 				<!--Хит-1-->
-				<a class="hit hit-1" href="#">
-					<img class="hit-label" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
-					<img class="hit-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
-					<span class="hit-price">
-						310&#8381;/кг
-					</span>
-					<p class="hit-description">
-						Сливочное с апельсиновым джемом и цитрусовой стружкой
-					</p>
-				</a>
+				<article class="item hit">
+					<a href="#">
+						<img class="item-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+						<span class="item-price">
+							310&#8381;/кг
+						</span>
+						<h2 class="item-description">
+							Сливочное с апельсиновым джемом и цитрусовой стружкой
+						</h2>
+
+						<!--Всплывающая имитация кнопки-->
+						<div class="pop-up view-item">
+								Быстрый просмотр
+						</div>
+						<!--конец-->
+
+					</a>
+				</article>
 				<!--конец-->
 
 				<!--Хит-2-->
-				<a class="hit hit-2" href="#">
-					<img class="hit-label" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
-					<img class="hit-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
-					<span class="hit-price">
-						380&#8381;/кг
-					</span>
-					<p class="hit-description">
-						Сливочно-кофейное с кусочками шоколада
-					</p>
-				</a>
+				<article class="item hit">
+					<a href="#">
+						<img class="item-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+						<span class="item-price">
+							380&#8381;/кг
+						</span>
+						<h2 class="item-description">
+							Сливочно-кофейное с кусочками шоколада
+						</h2>
+						
+						<!--Всплывающая имитация кнопки-->
+						<div class="pop-up view-item">
+								Быстрый просмотр
+						</div>
+						<!--конец-->
+
+					</a>
+				</article>
 				<!--конец-->
 
 				<!--Хит-3-->
-				<a class="hit hit-3" href="#">
-					<img class="hit-label" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
-					<img class="hit-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
-					<span class="hit-price">
-						355&#8381;/кг
-					</span>
-					<p class="hit-description">
-						Сливочно-клубничное с присыпкой из белого шоколада
-					</p>
-				</a>
+				<article class="item hit">
+					<a href="#">
+						<img class="item-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+						<span class="item-price">
+							355&#8381;/кг
+						</span>
+						<h2 class="item-description">
+							Сливочно-клубничное с присыпкой из белого шоколада
+						</h2>
+						
+						<!--Всплывающая имитация кнопки-->
+						<div class="pop-up view-item">
+								Быстрый просмотр
+						</div>
+						<!--конец-->
+
+					</a>
+				</article>
 				<!--конец-->
 
 				<!--Хит-4-->
-				<a class="hit hit-4" href="#">
-					<img class="hit-label" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
-					<img class="hit-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
-					<span class="hit-price">
-						415&#8381;/кг
-					</span>
-					<p class="hit-description">
-						Сливочное крем-брюле с карамельной подливкой
-					</p>
-				</a>
+				<article class="item hit">
+					<a href="#">
+						<img class="item-photo" src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+						<span class="item-price">
+							415&#8381;/кг
+						</span>
+						<h2 class="item-description">
+							Сливочное крем-брюле с карамельной подливкой
+						</h2>
+						
+						<!--Всплывающая имитация кнопки-->
+						<div class="pop-up view-item">
+								Быстрый просмотр
+						</div>
+						<!--конец-->
+
+					</a>
+				</article>
 				<!--конец-->
 
 			</div>
@@ -196,10 +316,10 @@
 
 
 			<!--Описание магазина-->
-			<div class="features">
-				<b>
+			<article class="features">
+				<h3>
 					Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
-				</b>
+				</h3>
 
 				<!--Особенность-1-->
 				<div class="feature-1">
@@ -237,7 +357,7 @@
 				</div>
 				<!--конец-->
 
-			</div>
+			</article>
 			<!--Описание магазина - конец-->
 
 
@@ -261,7 +381,7 @@
 					<p>
 						Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
 					</p>
-					<form class="subscribe-form" method="get" name="subscribe-form">
+					<form method="post">
 						<input type="email" name="email" placeholder="Электронная почта">
 						<button class="submit" type="submit" name="submit">
 							Отправить
@@ -280,6 +400,8 @@
 		<div class="map">
 			<img src="http://placehold.it/150x100" alt="Фото пока отсутствует">
 			<img src="http://placehold.it/150x100" alt="Фото пока отсутствует">
+
+			<!--Контактная инфомация-->
 			<address class="contact-info">
 				<span>
 					Адрес главного офиса и офлайн магазина:
@@ -299,7 +421,29 @@
 						Форма обратной связи
 					</a>
 				</div>
+
+				<!--Всплывающее окно обратной связи-->
+				<div class="pop-up contact-window">
+					<div class="close-button"></div>
+					<span>
+						Мы обязательно вам ответим!
+					</span>
+					<form method="post">
+						<input type="text" name="username" placeholder="Как вас зовут?">
+						<input type="email" name="user-email" placeholder="Ваша почта для ответа">
+						<textarea name="user-message">
+							Напишите что-нибудь...
+						</textarea>
+						<button class="user-button" type="submit">
+							Отправить
+						</button>
+					</form>
+				</div>
+				<!--конец-->
+
 			</address>
+			<!--Контактная инфомация - конец-->
+
 		</div>
 		<!--Карта - конец-->
 
