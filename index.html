@@ -2,6 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no">
 		<title>
 			Глейси - Главная страница
 		</title>
@@ -107,7 +108,7 @@
 
 						<!--Авторизация-->
 						<div class="login">
-							<a href="#">
+							<a href="login.html">
 								Вход
 							</a>
 
@@ -134,7 +135,7 @@
 
 						<!--Корзина-->
 						<div class="basket">
-							<a class="basket-empty" href="#">
+							<a class="basket-empty" href="basket.html">
 								Пусто
 							</a>
 						</div>
@@ -241,7 +242,6 @@
 
 					</div>
 					<!--Баннеры - конец-->
-
 
 					<!--Хиты продаж-->
 					<div class="gallery-item container clearfix">
@@ -406,16 +406,18 @@
 						<!--Новости - конец-->
 
 						<!--Подписка-->
-						<div class="subscribe right-column">
-							<p>
-								Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-							</p>
-							<form action="url" method="post">
-								<input type="email" name="email" placeholder="Электронная почта">
-								<button class="button submit" type="submit" name="submit">
-									Отправить
-								</button>
-							</form>
+						<div class="subscribe-background  right-column">
+							<div class="subscribe">
+								<p>
+									Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+								</p>
+								<form action="url" method="post">
+									<input type="email" name="email" placeholder="Электронная почта">
+									<button class="button submit" type="submit" name="submit">
+										Отправить
+									</button>
+								</form>
+							</div>
 						</div>
 						<!--Подписка - конец-->
 
@@ -425,8 +427,7 @@
 
 					<!--Карта и обратная связь-->
 					<div class="map-contact">
-
-						<img class="map" src="img/map-medium-with-marker.jpg" width="1200" height="430" alt="Фото пока отсутствует">
+						<div class="yandex-map" id="yandex-map"></div>
 
 						<!--Контактная инфомация-->
 						<address class="contact-info">
@@ -448,7 +449,7 @@
 								(с 10 до 20 ежедневно)
 							</span>
 							<!--<div class="">-->
-								<a class="contact-button button" href="#">
+								<a class="contact-button button" href="feedback.html">
 									Форма обратной связи
 								</a>
 							<!--</div>-->
@@ -461,9 +462,6 @@
 
 				<!--Основной контент - конец-->
 				</main>
-
-				
-
 
 				<!--Подвал-->
 				<footer class="main-footer container clearfix">
@@ -550,14 +548,7 @@
 			</form>
 		</div>
 
-		<div class="modal-content-map">
-			<button class="close-btn" type="button" title="Закрыть">
-				Закрыть
-			</button>
-
-			<div id="yandex-map"></div>
-
-		</div>
+	
 
 		<div class="modal-overlay"></div>
 		<!--конец-->
