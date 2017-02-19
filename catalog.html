@@ -24,20 +24,22 @@
 				<!--Главный блок навигации по сайту-->
 				<nav class="main-navigation">
 					<ul class="top-menu">
-						<li class="hidden-section current">
-							<a>
-								Каталог
+						<li class="hidden-section">
+							<a class="btn current">
+								<span class="underline">
+									Каталог
+								</span>
 							</a>
 
 							<!--Всплывающее меню-->
-							<ul class="pop-up sub-menu">
+							<ul class="sub-menu">
 								<li>
-									<a href="#">
+									<a class="new-offers" href="#">
 										Новинки
 									</a>
 								</li>
-								<li>
-									<a href="#">
+								<li class="current">
+									<a href="catalog.html">
 										Сливочное
 									</a>
 								</li>
@@ -61,13 +63,17 @@
 
 						</li>
 						<li>
-							<a href="#">
-								Доставка и оплата
+							<a class="btn" href="#">
+								<span class="underline">
+									Доставка и оплата
+								</span>
 							</a>
 						</li>
 						<li>
-							<a href="#">
-								О Компании
+							<a class="btn" href="#">
+								<span class="underline">
+									О Компании
+								</span>
 							</a>
 						</li>
 					</ul>
@@ -85,8 +91,9 @@
 
 						<!--Всплывающее поле поиска-->
 						<div class="pop-up search-form">
-							<form method="get">
+							<form action="url" method="get">
 								<input type="text" name="search" placeholder="Что ищем?">
+								<button class="hidden-button" type="submit"></button>
 							</form>
 						</div>
 						<!--конец-->
@@ -102,10 +109,10 @@
 
 							<!--Всплывающее поле авторизации-->
 							<div class="pop-up login-form">
-								<form method="post">
+								<form action="url" method="post">
 									<input type="email" name="email" placeholder="Электронная почта">
 									<input type="password" name="password" placeholder="Пароль">
-									<button class="login-button" type="submit" name="login-button">
+									<button class="login-button button" type="submit" name="login-button">
 										Войти
 									</button>
 								</form>
@@ -128,43 +135,41 @@
 						</a>
 
 						<div class="pop-up basket-view">
-							<table>
-								<tbody>
+							<table class="basket-items">
 									<tr>
-										<td>
-											<img src="http://placehold.it/11x11" alt="Удалить">
+										<td class="col-1">
+											<img src="img/close-button.png" width="11" height="11" alt="Удалить">
 										</td>
-										<td>
-											<img src="http://placehold.it/33x33" alt="Фото товара">
+										<td class="col-2">
+											<img src="img/orange-basket-view.png" width="33" height="33" alt="Фото товара">
 										</td>
-										<td>
+										<td class="col-3">
 											Пломбир с апельсиновым джемом
 										</td>
-										<td>
+										<td class="col-4">
 											1,5 кг х 200 руб.
 										</td>
-										<td>
+										<td class="col-5">
 											300 руб.
 										</td>
 									</tr>
 									<tr>
-										<td>
-											<img src="http://placehold.it/11x11" alt="Удалить">
+										<td class="col-1">
+											<img src="img/close-button.png" width="11" height="11" alt="Удалить">
 										</td>
-										<td>
-											<img src="http://placehold.it/33x33" alt="Фото товара">
+										<td class="col-2">
+											<img src="img/pink-basket-view.png" width="33" height="33" alt="Фото товара">
 										</td>
-										<td>
+										<td class="col-3">
 											Клубничный пломбир с присыпкой из белого шоколада
 										</td>
-										<td>
+										<td class="col-4">
 											1,5 кг х 300 руб.
 										</td>
-										<td>
+										<td class="col-5">
 											450 руб.
 										</td>
 									</tr>
-								</tbody>
 							</table>
 							<span>
 								Итого:
@@ -172,7 +177,7 @@
 							<span>
 								750 руб.
 							</span>
-							<a class="order-button" href="#">
+							<a class="order-button button" href="#">
 								Оформить заказ
 							</a>
 						</div>
@@ -181,8 +186,10 @@
 
 					<!--Режим работы-->
 					<span class="work-time">
-						С 10 до 20 ежедневно<br>
-						<b>8 812 450-25-25</b>
+						С 10 до 20 ежедневно
+						<span class="marked-text">
+							8 812 450-25-25
+						</span>
 					</span>
 					<!--конец-->
 
@@ -194,24 +201,28 @@
 
 			<!--Дополнительный блок навигации по сайту-->
 			<div class="breadcrumbs container clearfix">
-				<ul class="top-menu">
+				<ul class="breadcrumbs-top-menu">
 					<li class="next-section">
-						<a href="#">
-							Главная
+						<a href="index.html">
+							<span class="underline">
+								Главная
+							</span>
 						</a>
 					</li>
 					<li class="next-section hidden-section">
 						<a href="#">
-							Каталог
+							<span class="underline">
+								Каталог
+							</span>
 						</a>
 						<ul class="pop-up sub-menu">
 							<li>
-								<a href="#">
+								<a class="new-offers" href="#">
 									Новинки
 								</a>
 							</li>
-							<li>
-								<a href="#">
+							<li class="current">
+								<a href="catalog.html">
 									Сливочное
 								</a>
 							</li>
@@ -237,38 +248,41 @@
 							Сливочное
 						</a>
 					</li>
+
 				</ul>
 			</div>
 			<!--Дополнительный блок навигации по сайту - конец-->
 
-			<!--Основной контент - конец-->
+			<!--Основной контент-->
 			<main class="container clearfix">
 				<h1>
 					Сливочное мороженое
 				</h1>
 
 				<!--Фильтр-->
-				<form class="catalog-filter clearfix" method="get">
+				<form action="url" class="catalog-filter clearfix" method="get">
 
 					<!--Вид сортировки-->
 					<div class="sorting">
 						<span>
 							Сортировка:
 						</span>
-						<select name="sort" size="1" id="sort">
-							<option value="famous">
-								По популярности
-							</option>
-							<option value="low-price">
-								Сначала недорогие
-							</option>
-							<option value="high-price">
-								Сначала дорогие
-							</option>
-							<option value="percent-fat">
-								По жирности
-							</option>
-						</select>
+						<div class="sort-kind-marker">
+							<select class="sort-kind" name="sort" size="1" id="sort">
+								<option value="famous">
+									По популярности
+								</option>
+								<option value="low-price">
+									Сначала недорогие
+								</option>
+								<option value="high-price">
+									Сначала дорогие
+								</option>
+								<option value="percent-fat">
+									По жирности
+								</option>
+							</select>
+						</div>
 					</div>
 					<!--конец-->
 					
@@ -277,11 +291,11 @@
 						<div class="price-controls">
 							<label class="min-price">
 								Цена: 
-								<input type="text" name="min-price" value="0">
+								<input type="text" name="min-price" value="100" readonly>
 								руб. - 
 							 </label>
 							<label class="max-price">
-								<input type="text" name="max-price" value="500">
+								<input type="text" name="max-price" value="500" readonly>
 								руб.
 							 </label>
 
@@ -301,22 +315,24 @@
 						<span>
 							Жирность:
 						</span>
-						<input type="radio" id="fat0" name="fat"  value="0">
-						<label for="fat0">
-							0%
-						</label>
-						<input type="radio" id="fat10" name="fat"  value="10" checked>
-						<label for="fat10">
-							до 10%
-						</label>
-						<input type="radio" id="fat30" name="fat"  value="30">
-						<label for="fat30">
-							до 30%
-						</label>
-						<input type="radio" id="fat100" name="fat"  value="100">
-						<label for="fat100">
-							выше 30%
-						</label>
+						<div class="fat-choice">
+							<input type="radio" id="fat0" name="fat"  value="0">
+							<label for="fat0">
+								0%
+							</label>
+							<input type="radio" id="fat10" name="fat"  value="10" checked>
+							<label for="fat10">
+								до 10%
+							</label>
+							<input type="radio" id="fat30" name="fat"  value="30">
+							<label for="fat30">
+								до 30%
+							</label>
+							<input type="radio" id="fat100" name="fat"  value="100">
+							<label for="fat100">
+								выше 30%
+							</label>
+						</div>
 					</div>
 					<!--конец-->
 
@@ -325,31 +341,33 @@
 						<span>
 							Наполнители:
 						</span>
-						<input type="checkbox" id="chocolate" name="chocolate" value="chocolate" checked>
-						<label for="chocolate">
-							шоколадные
-						</label>
-						<input type="checkbox" id="sugar" name="sugar" value="sugar" checked>
-						<label for="sugar">
-							сахарные присыпки
-						</label>
-						<input type="checkbox" id="fruit" name="fruit" value="fruit">
-						<label for="fruit">
-							фрукты
-						</label>
-						<input type="checkbox" id="syrup" name="syrup" value="syrup">
-						<label for="syrup">
-							сиропы
-						</label>
-						<input type="checkbox" id="jam" name="jam" value="jam">
-						<label for="jam">
-							джемы
-						</label>
+						<div class="fill-choice">
+							<input type="checkbox" id="chocolate" name="chocolate" value="chocolate" checked>
+							<label for="chocolate">
+								шоколадные
+							</label>
+							<input type="checkbox" id="sugar" name="sugar" value="sugar" checked>
+							<label for="sugar">
+								сахарные присыпки
+							</label>
+							<input type="checkbox" id="fruit" name="fruit" value="fruit">
+							<label for="fruit">
+								фрукты
+							</label>
+							<input type="checkbox" id="syrup" name="syrup" value="syrup">
+							<label for="syrup">
+								сиропы
+							</label>
+							<input type="checkbox" id="jam" name="jam" value="jam">
+							<label for="jam">
+								джемы
+							</label>
+						</div>
 					</div>
 					<!--конец-->
 
 					<!--Кнопка отправки данных-->
-					<button class="show-choice-btn" type="submit">
+					<button class="show-choice btn" type="submit">
 						Применить
 					</button>
 					<!--конец-->
@@ -362,7 +380,7 @@
 
 					<!--Единица товара-->
 					<article class="item">
-						<a class="item-light" href="#">
+						<a class="item-link" href="#">
 							<img class="item-photo" src="img/creme-orange-citron.png" width="267" height="267" alt="Фото товара">
 							<span class="item-price">
 								310&#8381;
@@ -371,7 +389,9 @@
 								</span>
 							</span>
 							<h2 class="item-description">
-								Сливочное с апельсиновым джемом и цитрусовой стружкой
+								<span class="underline">
+									Сливочное с апельсиновым джемом и цитрусовой стружкой
+								</span>
 							</h2>
 
 							<div class="pop-up button view-item-button" >
@@ -384,7 +404,7 @@
 
 					<!--Единица товара-->
 					<article class="item">
-						<a href="#">
+						<a class="item-link" href="#">
 							<img class="item-photo" src="img/creme-coffee-chocolate.png" width="267" height="267" alt="Фото товара">
 							<span class="item-price">
 								380&#8381;
@@ -393,7 +413,9 @@
 								</span>
 							</span>
 							<h2 class="item-description">
-								Сливочно-кофейное с кусочками шоколада
+								<span class="underline">
+									Сливочно-кофейное с кусочками шоколада
+								</span>
 							</h2>
 							
 							<div class="pop-up button view-item-button" >
@@ -406,7 +428,7 @@
 
 					<!--Единица товара-->
 					<article class="item">
-						<a href="#">
+						<a class="item-link" href="#">
 							<img class="item-photo" src="img/creme-strawberry-white-chocolate.png" width="267" height="267" alt="Фото товара">
 							<span class="item-price">
 								355&#8381;
@@ -415,7 +437,9 @@
 								</span>
 							</span>
 							<h2 class="item-description">
-								Сливочно-клубничное с присыпкой из белого шоколада
+								<span class="underline">
+									Сливочно-клубничное с присыпкой из белого шоколада
+								</span>
 							</h2>
 							
 							<div class="pop-up button view-item-button" >
@@ -428,7 +452,7 @@
 
 					<!--Единица товара-->
 					<article class="item">
-						<a href="#">
+						<a class="item-link" href="#">
 							<img class="item-photo" src="img/creme-brulee-caramel.png" width="267" height="267" alt="Фото товара">
 							<span class="item-price">
 								415&#8381;
@@ -437,7 +461,9 @@
 								</span>
 							</span>
 							<h2 class="item-description">
-								Сливочное крем-брюле с карамельной подливкой
+								<span class="underline">
+									Сливочное крем-брюле с карамельной подливкой
+								</span>
 							</h2>
 							
 							<div class="pop-up button view-item-button" >
@@ -450,7 +476,7 @@
 
 					<!--Единица товара-->
 					<article class="item">
-						<a href="#">
+						<a class="item-link" href="#">
 							<img class="item-photo" src="img/creme-cowberry.png" width="267" height="267" alt="Фото товара">
 							<span class="item-price">
 								325&#8381;
@@ -459,7 +485,9 @@
 								</span>
 							</span>
 							<h2 class="item-description">
-								Сливочное с брусничным джемом
+								<span class="underline">
+									Сливочное с брусничным джемом
+								</span>
 							</h2>
 							
 							<div class="pop-up button view-item-button" >
@@ -472,7 +500,7 @@
 
 					<!--Единица товара-->
 					<article class="item">
-						<a href="#">
+						<a class="item-link" href="#">
 							<img class="item-photo" src="img/creme-blueberry.png" width="267" height="267" alt="Фото товара">
 							<span class="item-price">
 								410&#8381;
@@ -481,7 +509,9 @@
 								</span>
 							</span>
 							<h2 class="item-description">
-								Сливочно-черничное с цельными ягодами черники
+								<span class="underline">
+									Сливочно-черничное с цельными ягодами черники
+								</span>
 							</h2>
 							
 							<div class="pop-up button view-item-button" >
@@ -494,7 +524,7 @@
 
 					<!--Единица товара-->
 					<article class="item">
-						<a href="#">
+						<a class="item-link" href="#">
 							<img class="item-photo" src="img/creme-lemon-caramel-crumbs.png" width="267" height="267" alt="Фото товара">
 							<span class="item-price">
 								375&#8381;
@@ -503,7 +533,9 @@
 								</span>
 							</span>
 							<h2 class="item-description">
-								Сливочно-лимонное с карамельной присыпкой
+								<span class="underline">
+									Сливочно-лимонное с карамельной присыпкой
+								</span>
 							</h2>
 							
 							<div class="pop-up button view-item-button" >
@@ -516,7 +548,7 @@
 
 					<!--Единица товара-->
 					<article class="item">
-						<a href="#">
+						<a class="item-link" href="#">
 							<img class="item-photo" src="img/creme-chocolate-shavins.png" width="267" height="267" alt="Фото товара">
 							<span class="item-price">
 								320&#8381;
@@ -525,7 +557,9 @@
 								</span>
 							</span>
 							<h2 class="item-description">
-								Сливочное с шоколадной стружкой
+								<span class="underline">
+									Сливочное с шоколадной стружкой
+								</span>
 							</h2>
 							
 							<div class="pop-up button view-item-button" >
@@ -538,7 +572,7 @@
 
 					<!--Единица товара-->
 					<article class="item">
-						<a href="#">
+						<a class="item-link" href="#">
 							<img class="item-photo" src="img/creme-vanilla-chocolate.png" width="267" height="267" alt="Фото товара">
 							<span class="item-price">
 								440&#8381;
@@ -547,7 +581,9 @@
 								</span>
 							</span>
 							<h2 class="item-description">
-								Сливочно-ванильное с кусочками шоколада
+								<span class="underline">
+									Сливочно-ванильное с кусочками шоколада
+								</span>
 							</h2>
 							
 							<div class="pop-up button view-item-button" >
@@ -560,7 +596,7 @@
 
 					<!--Единица товара-->
 					<article class="item">
-						<a href="#">
+						<a class="item-link" href="#">
 							<img class="item-photo" src="img/creme-menthol-syrup.png" width="267" height="267" alt="Фото товара">
 							<span class="item-price">
 								435&#8381;
@@ -569,7 +605,9 @@
 								</span>
 							</span>
 							<h2 class="item-description">
-								Сливочное с ментоловым сиропом
+								<span class="underline">
+									Сливочное с ментоловым сиропом
+								</span>
 							</h2>
 							
 							<div class="pop-up button view-item-button" >
@@ -582,7 +620,7 @@
 
 					<!--Единица товара-->
 					<article class="item">
-						<a href="#">
+						<a class="item-link" href="#">
 							<img class="item-photo" src="img/creme-black-chocolate.png" width="267" height="267" alt="Фото товара">
 							<span class="item-price">
 								355&#8381;
@@ -591,7 +629,9 @@
 								</span>
 							</span>
 							<h2 class="item-description">
-								Сливочное с кусочками черного шоколада
+								<span class="underline">
+									Сливочное с кусочками черного шоколада
+								</span>
 							</h2>
 							
 							<div class="pop-up button view-item-button" >
@@ -604,7 +644,7 @@
 
 					<!--Единица товара-->
 					<article class="item">
-						<a href="#">
+						<a class="item-link" href="#">
 							<img class="item-photo" src="img/creme-mint-syrup.png" width="267" height="267" alt="Фото товара">
 							<span class="item-price">
 								420&#8381;
@@ -613,7 +653,9 @@
 								</span>
 							</span>
 							<h2 class="item-description">
-								Сливочное с мятным сиропом
+								<span class="underline">
+									Сливочное с мятным сиропом
+								</span>
 							</h2>
 							
 							<div class="pop-up button view-item-button" >
@@ -630,9 +672,9 @@
 				<!--Переключение страниц-->
 				<div class="page-select align-right">
 					<a class="select-prev disabled"></a>
-					<span class="page current">
+					<a class="page current">
 						1
-					</span>
+					</a>
 					<a class="page" href="#">
 						2
 					</a>
@@ -649,14 +691,12 @@
 				</div>
 				<!--конец-->
 
-				
-
 			</main>
 			<!--Основной контент - конец-->
 
 
 			<!--Подвал-->
-			<footer class="container main-footer clearfix">
+			<footer class="main-footer container clearfix overline">
 
 				<!--Адреса в социальных сетях-->
 				<div class="social-list">
@@ -679,18 +719,26 @@
 				<div class="documents">
 					<div>
 						<a class="heart-icon" href="#">
-							Для поставщиков
+							<span class="underline">
+								Для поставщиков
+							</span>
 						</a>
 						<a href="#">
-							Наши документы
+							<span class="underline">
+								Наши документы
+							</span>
 						</a>
 					</div>
 					<div>
 						<a href="#">
-							О производстве
+							<span class="underline">
+								О производстве
+							</span>
 						</a>
 						<a href="#">
-							Экологические стандарты
+							<span class="underline">
+								Экологические стандарты
+							</span>
 						</a>
 					</div>
 				</div>
@@ -698,11 +746,12 @@
 
 				<!--Разработчик сайта-->
 				<div class="author">
-					<img class="autor-photo" src="img/html-academy-icon.png" width="108" height="38" alt="">
 					<span>
 						Сделано в 
 						<a class="autor-link" href="#">
-							HTML Academy 
+							<span class="underline">
+								HTML Academy 
+							</span>
 						</a>
 						&copy; 2017
 					</span>
