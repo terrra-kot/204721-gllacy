@@ -33,7 +33,14 @@ body > input[type="radio"] {
 	margin: 0 auto;
 	background-color: rgba(132, 157, 143, 1);
 	-webkit-transition: background-color 1.5s ease;
-	transition: background-color 1.5s ease;
+		transition: background-color 1.5s ease;
+}
+
+.lighting {
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2) 5%, rgba(255, 255, 255, 0) 50%);
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2) 5%, rgba(255, 255, 255, 0) 50%);	
+	background-image: linear-gradient(rgba(255, 255, 255, 0.2) 5%, rgba(255, 255, 255, 0) 50%);
+	background-repeat: no-repeat;
 }
 
 .content-wrapper {
@@ -167,7 +174,9 @@ body > input[type="radio"] {
 	float: left;
 	margin-top: -13px; 
 }
-header a {
+
+.main-navigation a,
+.user-block a {
 	font-family: "Roboto", Arial, sans-serif;
 }
 
@@ -668,7 +677,6 @@ header a {
 	padding-top: 12px;
 	font-size: 18px;
 	line-height: 20px;
-
 }
 
 	/*Ховеры*/
@@ -724,7 +732,7 @@ header a {
 }
 
 .slide-title {
-	width: 700px;
+	width: 730px;
 	height: 121px;
 	margin: 0 auto;
 	margin-bottom: 30px;
@@ -763,45 +771,45 @@ header a {
 
 	/*Смена фона и слайдов*/
 
-#btn-1:checked ~ .site-wrapper {
+.slide-1:checked ~ .site-wrapper {
 	background-color: rgba(132, 157, 143, 1);
 }
 
-#btn-2:checked ~ .site-wrapper {
+.slide-2:checked ~ .site-wrapper {
 	background-color: rgba(137, 150, 166, 1);
 }
 
-#btn-3:checked ~ .site-wrapper {
+.slide-3:checked ~ .site-wrapper {
 	background-color: rgba(157, 139, 132, 1);
 }
 
-#btn-1:checked ~ .site-wrapper .content-wrapper {
+.slide-1:checked ~ .site-wrapper .content-wrapper {
 	background-image: url("../img/special-offer-1.png");
 }
 
-#btn-2:checked ~ .site-wrapper .content-wrapper {
+.slide-2:checked ~ .site-wrapper .content-wrapper {
 	background-image: url("../img/special-offer-2.png");
 }
 
-#btn-3:checked ~ .site-wrapper .content-wrapper {
+.slide-3:checked ~ .site-wrapper .content-wrapper {
 	background-image: url("../img/special-offer-3.png");
 }
 
-#btn-1:checked ~ .site-wrapper #slide1,
-#btn-2:checked ~ .site-wrapper #slide2,
-#btn-3:checked ~ .site-wrapper #slide3 {
+.slide-1:checked ~ .site-wrapper .slide-show-1,
+.slide-2:checked ~ .site-wrapper .slide-show-2,
+.slide-3:checked ~ .site-wrapper .slide-show-3 {
 	display: block;
 }
 
-label[for="btn-1"]:hover,
-label[for="btn-2"]:hover,
-label[for="btn-3"]:hover {
+.slide-control-1:hover,
+.slide-control-2:hover,
+.slide-control-3:hover {
 	background-color: rgba(255, 255, 255, 0.2);
 }
 
-#btn-1:checked ~ .site-wrapper label[for="btn-1"],
-#btn-2:checked ~ .site-wrapper label[for="btn-2"],
-#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+.slide-1:checked ~ .site-wrapper .slide-control-1,
+.slide-2:checked ~ .site-wrapper .slide-control-2,
+.slide-3:checked ~ .site-wrapper .slide-control-3 {
 	background-color: rgba(255, 255, 255, 1);
 }
 
@@ -908,6 +916,7 @@ main > h1 {
 
 
 .price-controls {
+	height: 20px;
 	margin-left: 15px;
 	font-size: 0;
 }
@@ -930,11 +939,13 @@ main > h1 {
 }
 
 .max-price {
-	width: 60px;
+	width: 70px;
 }
 
 .price-controls input {
 	width: 30px;
+	padding: 0;
+	border: none;
 	color: rgba(255, 255, 255, 1);
 	font-size: 14px;
 	line-height: 16px;
@@ -1402,12 +1413,14 @@ main > h1 {
 
 .banner:nth-child(1) {
 	color: rgba(255, 255, 255, 1);
+	background-color: rgba(184, 1, 47, 1);
 	background-image: url("../img/offer-raspberry.jpg");
 	background-repeat: repeat;
 	background-position: left -27px top -93px;
 }
 .banner:nth-child(2) {
 	color: rgba(255, 255, 255, 1);
+	background-color: rgba(113, 71, 55, 1);
 	background-image: url("../img/offer-chocolate.jpg");
 	background-repeat: repeat;
 	background-position: left top ;
@@ -1518,7 +1531,7 @@ main > h1 {
 	font-size: 16px;
 	line-height: 22px;
 	color: rgba(50, 50, 50, 1);
-	background-color: #f8f7f4;
+	background-color: rgba(248, 247, 244, 1);
 	background-image: url("../img/news-background.jpg");
 	background-repeat: no-repeat;
 	background-position: left -27px top -224px;
@@ -1727,72 +1740,38 @@ main > h1 {
 	background-position: -628px -98px;
 }
 
-.social-icon::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0;
-	z-index: 1;
-	display: none;
-	width: 38px;
-	height: 38px;
-	background-image: url("../img/spritesheet.png");
-	background-repeat: no-repeat;
+	/*Ховеры*/
+
+.twitter:hover {
+	background-position: -561px -543px;
 }
 
-.social-icon::after {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0;
-	z-index: 20;
-	display: none;
-	width: 38px;
-	height: 38px;
-	background-image: url("../img/spritesheet.png");
-	background-repeat: no-repeat;
-}
-
-.twitter::before {
-	background-position: -98px -543px;
-}
-
-.instagram::before {
+.instagram:hover {
 	background-position: -109px -314px;
 }
 
-.facebook::before {
+.facebook:hover {
 	background-position: -477px -80px;
 }
 
-.vk::before {
+.vk:hover {
 	background-position: -488px -543px;
 }
 
-.twitter::after {
+.twitter:active {
 	background-position: -20px -543px;
 }
 
-.instagram::after {
+.instagram:active {
 	background-position: -448px -236px;
 }
 
-.facebook::after {
+.facebook:active {
 	background-position: -399px -80px;
 }
 
-.vk::after {
+.vk:active {
 	background-position: -332px -543px;
-}
-
-	/*Ховеры*/
-
-.social-icon:active::after {
-	display: block;
-}
-
-.social-icon:hover::before {
-	display: block;
 }
 
 	/*Документы*/
@@ -1891,7 +1870,7 @@ main > h1 {
 .close-btn {
 	position: absolute;
 	right: 12px;
-	top: 15;
+	top: 15px;
 	z-index: 200;
 	width: 18px;
 	height: 18px;

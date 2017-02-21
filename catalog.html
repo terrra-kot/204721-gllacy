@@ -7,8 +7,8 @@
 			Глейси - каталог товаров
 		</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/minnormalize.css">
+		<link rel="stylesheet" type="text/css" href="css/minstyle.css">
 	</head>
 
 	<body>
@@ -104,31 +104,31 @@
 						<!--конец-->
 
 						<!--Авторизация-->
-							<div class="login">
-								<a href="login.html">
-									Вход
+						<div class="login">
+							<a href="login.html">
+								Вход
+							</a>
+
+							<!--Всплывающее поле авторизации-->
+							<div class="pop-up login-form">
+								<form action="url" method="post">
+									<input type="email" name="email" placeholder="Электронная почта">
+									<input type="password" name="password" placeholder="Пароль">
+									<button class="login-button button" type="submit" name="login-button">
+										Войти
+									</button>
+								</form>
+								<a href="#">
+									Забыли пароль?
 								</a>
-
-								<!--Всплывающее поле авторизации-->
-								<div class="pop-up login-form">
-									<form action="url" method="post">
-										<input type="email" name="email" placeholder="Электронная почта">
-										<input type="password" name="password" placeholder="Пароль">
-										<button class="login-button button" type="submit" name="login-button">
-											Войти
-										</button>
-									</form>
-									<a href="#">
-										Забыли пароль?
-									</a>
-									<a href="#">
-										Новая регистрация
-									</a>
-								</div>
-								<!--конец-->
-
+								<a href="#">
+									Новая регистрация
+								</a>
 							</div>
 							<!--конец-->
+
+						</div>
+						<!--конец-->
 
 						<!--Корзина-->
 						<div class="basket">
